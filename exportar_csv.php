@@ -26,7 +26,7 @@ header('Content-Disposition: attachment; filename = "mascotas.csv"');
 $output = fopen('php://output', 'w');
 
 //Pone la primera fila
-fputcsv($output, ['Nombre ', 'Espcecie ', 'Dueños ', 'Ultima Visita']);
+fputcsv($output, ['Nombre ', 'Espcecie ', 'Dueños ', 'Ultima Visita'], ',', '"', '');
 
 //Recorre cada mascota
 foreach($mascotas as $mascota){
@@ -48,10 +48,11 @@ foreach($mascotas as $mascota){
 
 
     //Le imprimimos los datos a la mascota 
-    fputcsv ($output, [$mascota -> getNombre(), $mascota -> getEspecie(), $duenos, $ultima]);
+    fputcsv ($output, [$mascota -> getNombre(), $mascota -> getEspecie(), $duenos, $ultima], ',', '"', '');
 }
 
 //Cerramos el archivo
 fclose($output);
+
 
 exit;
