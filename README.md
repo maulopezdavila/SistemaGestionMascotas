@@ -1,4 +1,4 @@
-#  Sistema de Gestión de Mascotas para Veterinaria🐶
+#  Sistema de Gestión de Mascotas para Veterinaria
 
 Mi examen sobre un sistema de gestión de mascotas para un veterinaria. Es una app web simple donde se registrar mascotas, dueños, visitas médicas, buscar info y exportar datos a CSV. Principalmente use PHP, y un poquito de CSS para  que no se vea feo y JS para unas interacciones.
 
